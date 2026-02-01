@@ -1,40 +1,45 @@
-# First Assignment
+<!-- prettier-ignore -->
+# 🛍️ My Ecommerce Store — Frontend
 
-Simple product listing web project that fetches data from DummyJSON and displays product cards with pagination, search suggestions, and product detail pages.
+A clean, lightweight product listing demo that fetches sample data and displays product cards with pagination, simple search suggestions, and product detail pages.
 
-Files
-- `index.html` — main listing page
-- `product.html` — product detail page
-- `search.html` — search results page
-- `script.js` — main JavaScript (fetch, pagination, search suggestions)
-- `product.js` — product detail logic
-- `search.js` — search results logic
-- `style.css` — styles (simple, improved UI)
-- `history.html`, `history.js` — visit/search history
+What you'll find
+- `index.html` — Main product listing
+- `product.html` — Product details view
+- `search.html` — Search results
+- `script.js` — Fetch, pagination, and search-suggestion logic
+- `product.js`, `search.js` — Page-specific scripts
+- `style.css` — Easy-to-edit CSS for layout and visuals
+- `history.html`, `history.js` — Saved visit/search history utilities
 
-Key Notes
-- Pagination shows 6 items per page (configured in `script.js` via `itemsPerPage = 6`).
-- Data is fetched from `https://dummyjson.com/products` — an active internet connection is required.
-- Styling improved using only basic CSS (see `style.css`).
+Highlights
+- Pagination is set to show 6 items per page (see `script.js`).
+- Product data comes from DummyJSON; the app requires internet access to fetch data.
+- Styling uses basic, widely-supported CSS only — easy to customize.
 
-Run locally
-1. Quick (no server): open `index.html` in your browser. Some browsers restrict fetch from local files, so a local server is recommended.
-2. Start a simple Python HTTP server (recommended):
+Quick Start
 
-```bash
-python -m http.server 8000
-```
+- To preview: open `index.html` in your browser.
+- If your browser blocks network requests from local files, run a simple local server (for example, `python -m http.server 8000`) and open the address your server prints.
 
-Then open: http://localhost:8000/index.html
-
-Testing
-- Verify 6 product cards per page and pagination buttons at the bottom.
-- Try the search box; saved queries appear in suggestions (localStorage).
-- Click a product card to open its detail page (visit saved to localStorage).
+Testing Checklist
+- Confirm six product cards appear per page.
+- Use the search box: saved queries appear in suggestions (stored in `localStorage`).
+- Click a product card to open its detail page; visit history is stored in `localStorage`.
 
 Development
-- Edit `style.css` to tweak UI colors/spacing.
-- Edit `itemsPerPage` in `script.js` to change how many items display per page.
+- Tweak visual styles in `style.css`.
+- Change pagination count by editing `itemsPerPage` in `script.js`.
+
+Ideas / Next Enhancements
+- Add sorting (price, rating).
+- Add a lightweight cart stored in `localStorage`.
+- Improve accessibility (keyboard navigation, ARIA labels).
 
 License
-- No license specified.
+
+No license specified — feel free to adapt this for learning and demo purposes.
+
+---
+
+Enjoy! If you'd like, I can add a short contributor guide or a screenshot section next.
