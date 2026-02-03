@@ -48,6 +48,28 @@ header nav a:hover {
 }
 
 
+a[href="history.html"] {
+  display: block;
+  width: max-content;
+  margin: 12px auto 18px;
+  padding: 8px 14px;
+  background: #eef2ff;
+  color: #1f2937;
+  border-radius: 8px;
+  border: 1px solid #dbeafe;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(16, 24, 40, 0.04);
+  transition: transform 0.12s, box-shadow 0.12s, background 0.12s;
+  font-weight: 600;
+}
+
+a[href="history.html"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(16, 24, 40, 0.08);
+  background: #e0e7ff;
+}
+
+
 .search-box {
   position: relative;
   width: 100%;
@@ -210,7 +232,6 @@ main h2 {
   border-color: #111827;
 }
 
-/* Simple utility classes */
 .muted {
   color: #6b7280;
   font-size: 13px;
